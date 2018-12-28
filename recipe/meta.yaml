@@ -33,8 +33,6 @@ requirements:
     - cfitsio
     - chealpix
     - numpy
-    - blas 1.1 openblas
-    - openblas
     - llvm-openmp  # [osx]
   run:
     - python
@@ -44,8 +42,6 @@ requirements:
     - cfitsio
     - chealpix
     - numpy
-    - blas 1.1 openblas
-    - openblas
     - llvm-openmp  # [osx]
 
 test:
