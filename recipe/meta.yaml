@@ -1,5 +1,5 @@
 {% set name = "NaMaster" %}
-{% set version = "0.9" %}
+{% set version = "1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,16 +8,10 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/LSSTDESC/NaMaster/archive/v{{ version }}.tar.gz
-  sha256: 1e2afa77fd91aa7384957a1f3d3a2ce9d47b9dd013a05c73ab70cee389ceb79e
-  patches:
-    - namaster.h.patch
-    - Makefile.in.patch
-    - Makefile.am.patch
-    - setup.py.patch
-    - test.patch
+  sha256: 6531f62e182547ae6d46fcf5424f7f6373ccae0a4745e6e8e44f15f68e0592d3
 
 build:
-  number: 1002
+  number: 0
   skip: True  # [win]
 
 requirements:
