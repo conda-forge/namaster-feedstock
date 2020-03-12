@@ -19,6 +19,7 @@ requirements:
     - {{ compiler('c') }}
     - make
     - autoconf
+    - automake
     - llvm-openmp  # [osx]
     - libgomp      # [linux]
   host:
