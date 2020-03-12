@@ -18,24 +18,21 @@ requirements:
   build:
     - {{ compiler('c') }}
     - make
+    - autoconf
+    - llvm-openmp  # [osx]
+    - libgomp      # [linux]
   host:
     - python
     - pip
     - gsl
     - fftw
-    - libsharp
     - cfitsio
-    - chealpix
     - numpy
-    - llvm-openmp  # [osx]
   run:
     - python
     - gsl
     - fftw
-    - libsharp
-    - chealpix
     - numpy
-    - llvm-openmp  # [osx]
 
 test:
   source_files:
