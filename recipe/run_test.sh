@@ -2,4 +2,4 @@
 
 set -e
 
-${PYTHON} -m unittest discover -v || true
+${PYTHON} -m unittest discover -v
