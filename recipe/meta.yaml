@@ -47,6 +47,7 @@ test:
     - test/*
   requires:
     - healpy
+    - pytest
   imports:
     - pymaster
   commands:
