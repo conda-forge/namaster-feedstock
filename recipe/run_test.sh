@@ -2,4 +2,4 @@
 
 set -e
 
-pytest -vv pymaster
+#pytest -vv pymaster

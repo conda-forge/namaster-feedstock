@@ -33,7 +33,6 @@ requirements:
     - cfitsio
     - chealpix
     - numpy
-    - libtool
   run:
     - python
     - gsl
