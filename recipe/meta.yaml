@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/LSSTDESC/NaMaster/archive/v{{ version }}.tar.gz
-  sha256: 60ceee5fd971c7fc081ca278ef91ea07ed4debf991e6360bc2f0a3a5ca2663c8
+  sha256: bd317aa30f58d2b50d8a5e474dd3f6eb76e0c5584619518c711352d0edaff043
   patches:
     - 0000_nmt_test_field.patch
     - healpy_test_fixes_0000.patch
