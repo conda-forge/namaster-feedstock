@@ -32,14 +32,12 @@ requirements:
     - gsl
     - fftw
     - cfitsio
-    - libsharp
     - chealpix
     - numpy
   run:
     - python
     - gsl
     - fftw
-    - libsharp
     - chealpix
     - numpy
 
