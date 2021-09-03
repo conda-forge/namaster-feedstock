@@ -17,4 +17,4 @@ ln -s ${PREFIX}/lib/libchealpix.a _deps/lib/libchealpix.a
 ${PYTHON} -m pip install . -vv --no-deps
 
 # run tests now since they are not around later
-make check
+#make check
