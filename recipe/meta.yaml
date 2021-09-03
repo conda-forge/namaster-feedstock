@@ -24,6 +24,7 @@ requirements:
     - wget
     - llvm-openmp  # [osx]
     - libgomp      # [linux]
+    - libtool
   host:
     - python
     - pip
@@ -32,6 +33,7 @@ requirements:
     - cfitsio
     - chealpix
     - numpy
+    - libtool
   run:
     - python
     - gsl
