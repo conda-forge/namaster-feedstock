@@ -41,14 +41,16 @@ requirements:
     - numpy
 
 test:
-  source_files:
-    - test/*
-  requires:
-    - healpy
   imports:
     - pymaster
+  requires:
+    - healpy
+    - pytest
+  source_files:
+    - pymaster/tests
   commands:
     - namaster -h
+    - pytest -vv pymaster/tests
 
 about:
   home: https://github.com/LSSTDESC/NaMaster
