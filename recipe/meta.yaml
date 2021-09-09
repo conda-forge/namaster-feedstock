@@ -49,6 +49,7 @@ test:
   source_files:
     - pymaster/tests
   commands:
+    - ls
     #- namaster -h
     - pytest -vv pymaster/tests
 
