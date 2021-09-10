@@ -50,6 +50,8 @@ test:
     - pymaster/tests
   commands:
     - ls
+    - pwd
+    - ls ..
     #- namaster -h
     - pytest -vv pymaster/tests
 
