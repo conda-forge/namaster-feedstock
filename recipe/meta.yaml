@@ -47,7 +47,8 @@ test:
     - healpy
     - pytest
   source_files:
-    - pymaster/tests
+    - pymaster/tests/*
+    - test/*
   commands:
     - ls
     - pwd
