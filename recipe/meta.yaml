@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/LSSTDESC/NaMaster/archive/v{{ version }}.tar.gz
-  sha256: bd317aa30f58d2b50d8a5e474dd3f6eb76e0c5584619518c711352d0edaff043
+  sha256: 05a676010a7e0b860af845bea8e98e05f0d94b36498c8b63290bdc8c5ef97499
   patches:
 
 build:
