@@ -56,7 +56,9 @@ about:
   home: https://github.com/LSSTDESC/NaMaster
   license: BSD-3-Clause
   license_family: BSD
-  license_file: [LICENSE, COPYING]
+  license_file:
+    - LICENSE
+    - COPYING
   summary: pseudo-Cl power spectra w/ masking for spin-0 and spin-2 fields
   description: |
     NaMaster is a C library, Python module and standalone program to compute
