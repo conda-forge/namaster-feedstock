@@ -54,7 +54,9 @@ test:
 
 about:
   home: https://github.com/LSSTDESC/NaMaster
-  license: BSD-3-Clause
+  license:
+    - BSD-3-Clause
+    - GPL-2
   license_family: BSD
   license_file:
     - LICENSE
