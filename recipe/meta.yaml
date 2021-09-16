@@ -10,6 +10,7 @@ source:
   url: https://github.com/LSSTDESC/NaMaster/archive/v{{ version }}.tar.gz
   sha256: 05a676010a7e0b860af845bea8e98e05f0d94b36498c8b63290bdc8c5ef97499
   patches:
+    - libsharp_compflags.patch
 
 build:
   number: 2
