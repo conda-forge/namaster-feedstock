@@ -7,7 +7,7 @@ index fcfa0b7..eeabb84 100755
  else
      echo "Using -march=native. Binary will not be portable."
 -    CFLAGS="-march=native -std=c99 -O3 -ffast-math"
-+    CFLAGS+="-march=native -std=c99 -O3 -ffast-math"
++    CFLAGS+="-std=c99 -O3 -ffast-math"
  fi
  CFLAGS=$CFLAGS ./configure --prefix=${PWD}/../ --enable-shared=no --with-pic=yes
  make
