@@ -36,6 +36,7 @@ requirements:
     - numpy
     - libblas
     - libcblas
+    - liblapack
   run:
     - python
     - gsl
