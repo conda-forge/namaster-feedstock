@@ -3,7 +3,7 @@ About namaster
 
 Home: https://github.com/LSSTDESC/NaMaster
 
-Package license: BSD-3-Clause
+Package license: BSD-3-Clause AND GPL-2.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/namaster-feedstock/blob/master/LICENSE.txt)
 
