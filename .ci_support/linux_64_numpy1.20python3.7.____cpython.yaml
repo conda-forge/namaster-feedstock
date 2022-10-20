@@ -23,15 +23,13 @@ libcblas:
 liblapack:
 - 3.9 *netlib
 numpy:
-- '1.19'
+- '1.20'
 pin_run_as_build:
-  fftw:
-    max_pin: x
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.8.* *_cpython
+- 3.7.* *_cpython
 python_impl:
 - cpython
 target_platform:
