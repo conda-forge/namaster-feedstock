@@ -1,5 +1,5 @@
 {% set name = "NaMaster" %}
-{% set version = "1.5.1" %}
+{% set version = "1.6" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/LSSTDESC/NaMaster/archive/v{{ version }}.tar.gz
-  sha256: b9a21b84fe07366cff638367ea275bd48c028779b444d725fca5caa515bd7235
+  sha256: 9f5db77c291819adb2e53e9170a4f8675ac15448f521ce81f686ccb1a4b81275
   patches:
     - libsharp_compflags.patch
 
