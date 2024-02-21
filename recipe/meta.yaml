@@ -13,8 +13,8 @@ source:
     - libsharp_compflags.patch
 
 build:
-  number: 3
-  skip: true  # [win or (python_impl == 'pypy')]
+  number: 4
+  skip: true  # [win or (python_impl == 'pypy') or py<39]
 
 requirements:
   build:
