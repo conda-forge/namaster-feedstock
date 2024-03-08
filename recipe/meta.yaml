@@ -1,5 +1,5 @@
 {% set name = "NaMaster" %}
-{% set version = "1.2.2" %}
+{% set version = "1.6" %}
 
 package:
   name: {{ name|lower }}
@@ -8,13 +8,13 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/LSSTDESC/NaMaster/archive/v{{ version }}.tar.gz
-  sha256: 05a676010a7e0b860af845bea8e98e05f0d94b36498c8b63290bdc8c5ef97499
+  sha256: 9f5db77c291819adb2e53e9170a4f8675ac15448f521ce81f686ccb1a4b81275
   patches:
     - libsharp_compflags.patch
 
 build:
-  number: 0
-  skip: true  # [win or (python_impl == 'pypy')]
+  number: 4
+  skip: true  # [win or (python_impl == 'pypy') or py<39]
 
 requirements:
   build:
