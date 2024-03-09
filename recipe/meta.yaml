@@ -13,16 +13,20 @@ source:
     - libsharp_compflags.patch
 
 build:
-  number: 4
+  number: 5
   skip: true  # [win or (python_impl == 'pypy') or py<39]
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - numpy                                  # [build_platform != target_platform]    
     - make
     - autoconf
     - automake
     - wget
+    - gnuconfig  # [unix]
     - llvm-openmp  # [osx]
     - libgomp      # [linux]
     - libtool

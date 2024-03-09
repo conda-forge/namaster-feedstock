@@ -1,3 +1,5 @@
+build_platform:
+  osx_arm64: osx_64
 bot:
   automerge: true
 conda_forge_output_validation: true
@@ -7,3 +9,4 @@ github:
 conda_build:
   pkg_format: '2'
 conda_build_tool: 'conda-build+conda-libmamba-solver'
+test: native_and_emulated
