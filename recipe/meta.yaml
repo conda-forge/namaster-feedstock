@@ -13,12 +13,13 @@ source:
     - libsharp_compflags.patch
 
 build:
-  number: 5
+  number: 6
   skip: true  # [win or (python_impl == 'pypy') or py<39]
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]    
