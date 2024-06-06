@@ -1,5 +1,5 @@
 {% set name = "NaMaster" %}
-{% set version = "1.6" %}
+{% set version = "2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -9,11 +9,9 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/LSSTDESC/NaMaster/archive/v{{ version }}.tar.gz
   sha256: 9f5db77c291819adb2e53e9170a4f8675ac15448f521ce81f686ccb1a4b81275
-  patches:
-    - libsharp_compflags.patch
 
 build:
-  number: 6
+  number: 0
   skip: true  # [win or (python_impl == 'pypy') or py<39]
 
 requirements:
@@ -48,6 +46,7 @@ requirements:
     - fftw
     - chealpix
     - numpy
+    - ducc0
 
 test:
   imports:
