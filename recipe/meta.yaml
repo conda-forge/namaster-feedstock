@@ -11,7 +11,7 @@ source:
   sha256: 4f3ce3037c6473d47b30fd63b7187347011b98dc2d37d5910b4b5bc32130bb60
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win or (python_impl == 'pypy') or py<39]
 
 requirements:
@@ -47,12 +47,12 @@ requirements:
     - chealpix
     - numpy
     - ducc0
+    - healpy
 
 test:
   imports:
     - pymaster
   requires:
-    - healpy
     - pytest
   source_files:
     - pymaster/tests/*
