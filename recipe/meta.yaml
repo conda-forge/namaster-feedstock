@@ -1,5 +1,5 @@
 {% set name = "NaMaster" %}
-{% set version = "2.1" %}
+{% set version = "2.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/LSSTDESC/NaMaster/archive/v{{ version }}.tar.gz
-  sha256: 8897060b58f309c4fcfae07de6d53a9ba1bc28e7664461abd98f707606dc8337
+  sha256: 12fc6b534a9010ef9d2462be8c2f71c2e5fb39d8741393aa61ba0528c0e9bff3
 
 build:
   number: 0
