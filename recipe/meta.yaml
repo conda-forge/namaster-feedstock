@@ -32,6 +32,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
     - gsl
     - fftw
     - cfitsio
