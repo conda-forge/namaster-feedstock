@@ -11,7 +11,7 @@ source:
   sha256: c82bb874ff37ea7239992b4dc87b716f7334c521c90c3e1bbd971ddfada91fea
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win or (python_impl == 'pypy') or py<39]
 
 requirements:
