@@ -7,7 +7,7 @@ Home: https://github.com/LSSTDESC/NaMaster
 
 Package license: BSD-3-Clause AND GPL-2.0-only
 
-Summary: pseudo-Cl power spectra w/ masking for spin-0 and spin-2 fields
+Summary: Pseudo-Cl power spectra w/ masking for spin-0 and spin-2 fields
 
 Documentation: https://namaster.readthedocs.io
 
