@@ -59,7 +59,8 @@ test:
     - pymaster/tests/*
     - test/*
   commands:
-    - pytest -vv pymaster/tests -k "not test_workspace_car_methods"
+    - pytest -vv pymaster/tests
+#    - pytest -vv pymaster/tests -k "not test_workspace_car_methods"
 
 about:
   home: https://github.com/LSSTDESC/NaMaster
