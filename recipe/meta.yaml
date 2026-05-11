@@ -3,15 +3,17 @@
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/LSSTDESC/NaMaster/archive/v{{ version }}.tar.gz
   sha256: 267c88e73e26a6916088b55393cd73a45de094d874480e4ce35df7c2804201f3
+  patches:
+    - 0001-dynamic-link-chealpix.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win or (python_impl == 'pypy') or py<310]
 
 requirements:
@@ -33,6 +35,8 @@ requirements:
     - python
     - pip
     - setuptools
+    - llvm-openmp  # [osx]
+    - libgomp      # [linux]
     - gsl
     - fftw
     - cfitsio
