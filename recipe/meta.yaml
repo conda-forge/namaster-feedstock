@@ -33,6 +33,8 @@ requirements:
     - python
     - pip
     - setuptools
+    - llvm-openmp  # [osx]
+    - libgomp      # [linux]
     - gsl
     - fftw
     - cfitsio
