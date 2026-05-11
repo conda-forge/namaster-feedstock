@@ -10,4 +10,5 @@ if [[ "${CONDA_BUILD_CROSS_COMPILATION:-}" == "1" ]]; then
   cp $BUILD_PREFIX/share/gnuconfig/config.* .
 fi
 
-${PYTHON} -m pip install . -vv --no-deps --no-build-isolation --use-feature="in-tree-build"
+# ${PYTHON} -m 
+pip install . -vv --no-deps --no-build-isolation
