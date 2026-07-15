@@ -53,6 +53,7 @@ requirements:
     - numpy
     - ducc0
     - healpy
+    - fitsio    
 
 test:
   imports:
