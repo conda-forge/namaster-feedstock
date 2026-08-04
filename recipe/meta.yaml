@@ -1,5 +1,5 @@
 {% set name = "NaMaster" %}
-{% set version = "3.0" %}
+{% set version = "3.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/LSSTDESC/NaMaster/archive/v{{ version }}.tar.gz
-  sha256: 55787e4f48253bf83dac10c5658433470a4888238e7a9b2acca99e535a2652ac
+  sha256: 90d12d12d99e3f5c66f43ce46a9014ade43eb7a20e14903b512542e5d543b623
   patches:
     - 0001-dynamic-link-chealpix.patch
 
@@ -53,7 +53,7 @@ requirements:
     - numpy
     - ducc0
     - healpy
-    - fitsio    
+    - fitsio
 
 test:
   imports:
